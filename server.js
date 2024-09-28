@@ -19,17 +19,17 @@ const downloadLimiter = rateLimit({
   message: "Too many download requests, please try again after a minute.",
 });
 
-// API key validation middleware
-const apiKeyMiddleware = (req, res, next) => {
-  const apiKey = req.headers["x-api-key"];
-  if (!apiKey || apiKey !== process.env.API_KEY) {
-    return res.status(403).json({ error: "Forbidden: Invalid API Key" });
-  }
-  next();
-};
+// // API key validation middleware
+// const apiKeyMiddleware = (req, res, next) => {
+//   const apiKey = req.headers["x-api-key"];
+//   if (!apiKey || apiKey !== process.env.API_KEY) {
+//     return res.status(403).json({ error: "Forbidden: Invalid API Key" });
+//   }
+//   next();
+// };
 
 // API URL for image data
-const apiUrl = process.env.IMAGE_URL;
+const apiUrl = `https://storage.googleapis.com/panels-api/data/20240916/media-1a-i-p~s`;
 
 // Helper function to paginate images
 const paginate = (array, page, pageSize) => {
@@ -58,7 +58,7 @@ app.get("/api/images", async (req, res) => {
   }
 });
 
-app.get("/api/download", downloadLimiter, apiKeyMiddleware, (req, res) => {
+app.get("/api/download", downloadLimiter, (req, res) => {
   const imageUrl = req.query.url;
   if (!imageUrl) {
     return res.status(400).json({ error: "Image url missing" });
