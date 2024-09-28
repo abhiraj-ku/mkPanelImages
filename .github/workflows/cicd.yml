@@ -20,3 +20,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@v2
+        with:
+          publish-dir: ./public
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }} # Set this secret in your GitHub repo
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }} # Set this secret in your GitHub repo

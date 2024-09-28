@@ -85,7 +85,7 @@ app.get("/api/download", downloadLimiter, (req, res) => {
 });
 
 // Start the server
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT || 5000, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
