@@ -39,4 +39,4 @@ Open your browser and navigate to http://localhost:5000 (or the specified port) 
 
 ### Credits
 
-This project was inspired by the work of [Nadim Kobeissi](https://github.com/nadimkobeissi/mkbsd), who reverse-engineered MKBHD's app and created a JavaScript file that enables image downloading. Special thanks for making this project possible!
+This project was inspired by the work of [Nadim Kobeissi](https://github.com/nadimkobeissi/mkbsd), who created JavaScript file that enables image downloading.
