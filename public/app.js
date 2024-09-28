@@ -7,7 +7,7 @@ const closeModal = document.querySelector(".close");
 let page = 1;
 let totalImages = 0;
 
-const apiBaseUrl = `http://localhost:5000/api`;
+const apiBaseUrl = `https://mkbhdpanelweb.netlify.app/`;
 
 async function fetchImages(page) {
   try {
