@@ -11,7 +11,7 @@ This project is a simple web application that allows users to view and download 
 
 ## Demo
 
-[Link to live demo soon...](#) (add a link here if available)
+[Live free Image downloader ](https://mkbhdpanelweb.netlify.app/) (add a link here if available)
 
 ## Setup Instructions
 
@@ -35,7 +35,7 @@ Follow these steps to set up the project locally:
     npm start
    ```
 
-Open your browser and navigate to http://localhost:3000 (or the specified port) to view the application.
+Open your browser and navigate to http://localhost:5000 (or the specified port) to view the application.
 
 ### Credits
 
