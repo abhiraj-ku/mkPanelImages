@@ -7,7 +7,7 @@ const closeModal = document.querySelector(".close");
 let page = 1;
 let totalImages = 0;
 
-const apiBaseUrl = `https://mkbhdpanelweb.netlify.app/`;
+const apiBaseUrl = `https://mkpanelimages-1.onrender.com/api`;
 
 async function fetchImages(page) {
   try {
