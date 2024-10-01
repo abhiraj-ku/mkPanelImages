@@ -4,10 +4,9 @@
   "main": "server.js",
   "scripts": {
     "start": "pm2 start pm2.config.js",
-  "stop": "pm2 stop express-server",
-  "restart": "pm2 restart express-server",
-  "logs": "pm2 logs express-server",
-    
+    "stop": "pm2 stop express-server",
+    "restart": "pm2 restart express-server",
+    "logs": "pm2 logs express-server",
     "dev": "nodemon server.js"
   },
   "keywords": [],
